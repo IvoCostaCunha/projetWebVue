@@ -42,7 +42,7 @@
 							<md-table-row slot="md-table-row" slot-scope="{ item }">
 									<md-table-cell md-label="Name" md-sort-by="name">{{ item.name }}</md-table-cell>
 									<md-table-cell md-label="Cuisine" md-sort-by="cuisine">{{ item.cuisine }}</md-table-cell>
-									<md-table-cell md-label="Details"><router-link :to="'restaurant/details'+item._id+item.name+item.cuisine">Details</router-link></md-table-cell>
+									<md-table-cell md-label="Details"><router-link :to="'restaurant/details?id='+item._id">Details</router-link></md-table-cell>
 									<md-table-cell md-label="Commander"><router-link :to="'restaurant/reserver'+item._id">Reserver Menu</router-link></md-table-cell>
 									<md-table-cell md-label="Administrer"><router-link :to="'restaurant/admin'+item._id">Administrer</router-link></md-table-cell>
 							</md-table-row>
